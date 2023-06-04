@@ -1,6 +1,5 @@
 import sys
-from Functions import add, sub, mul, div
-
+from Functions import add, sub, mul, div, power
 
 operator = (sys.argv[2])
 n1 = int(sys.argv[1])
@@ -17,6 +16,9 @@ if operator == 'x':
 
 if operator == '/':
   r = div(n1, n2)
+
+if operator == 'pw':
+  r = power(n1, n2)
 
   
 print(r)
